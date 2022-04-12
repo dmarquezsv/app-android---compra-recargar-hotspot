@@ -1,0 +1,397 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.Payment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="0dp"
+        android:layout_height="150dp"
+        android:background="@color/Beenet_Orange"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="150dp"
+            android:layout_height="100dp"
+            android:background="@drawable/logoblancobeenet"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.68" />
+
+        <TextView
+            android:layout_width="190dp"
+            android:layout_height="30dp"
+            android:drawablePadding="12dp"
+            android:fontFamily="@font/archivo_black"
+            android:paddingStart="12dp"
+            android:paddingLeft="12dp"
+            android:text="PAGO CON TARJETA"
+            android:textColor="@color/white"
+            android:textSize="15dp"
+            android:textStyle="bold|italic"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.133" />
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout"
+        app:layout_constraintVertical_bias="1.0">
+
+        <ScrollView
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="@color/Beenet_Gray"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="1.0">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:orientation="vertical"
+                android:background="@color/Beenet_Gray"
+                >
+
+                <EditText
+                    android:id="@+id/txt_name_package"
+                    android:enabled="false"
+                    android:layout_width="match_parent"
+                    android:layout_height="42dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="14dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/edit"
+                    android:drawableLeft="@drawable/outline_language_2"
+                    android:drawablePadding="12dp"
+                    android:hint="Nombre del paquete"
+                    android:paddingStart="12dp"
+                    android:paddingLeft="12dp"
+                    android:textColor="@color/black"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/txt_card_cvc"
+                    app:layout_constraintVertical_bias="0.108" />
+
+                <EditText
+                    android:id="@+id/txt_price_internet"
+                    android:enabled="false"
+                    android:layout_width="match_parent"
+                    android:layout_height="42dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/edit"
+                    android:drawableLeft="@drawable/outline_attach_money_2"
+                    android:drawablePadding="12dp"
+                    android:hint="0.00"
+                    android:paddingStart="12dp"
+                    android:paddingLeft="12dp"
+                    android:textColor="@color/black"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/txt_card_cvc"
+                    app:layout_constraintVertical_bias="0.108" />
+
+                <EditText
+                    android:id="@+id/txtName"
+                    android:layout_width="match_parent"
+                    android:layout_height="42dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/edit"
+                    android:drawableLeft="@drawable/outline_perm_identity_24"
+                    android:drawablePadding="12dp"
+                    android:hint="Nombre completo"
+                    android:paddingStart="12dp"
+                    android:paddingLeft="12dp"
+                    android:textColor="@color/black"
+                    android:textColorHint="#FF6D00"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="1.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.103" />
+
+
+                <EditText
+                    android:id="@+id/txt_Email"
+                    android:layout_width="match_parent"
+                    android:layout_height="42dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/edit"
+                    android:drawableLeft="@drawable/outline_mail_24"
+                    android:drawablePadding="12dp"
+                    android:hint="Correo electrónico"
+                    android:inputType="textEmailAddress"
+                    android:paddingStart="12dp"
+                    android:paddingLeft="12dp"
+                    android:textColor="@color/black"
+                    android:textColorHint="#FF6D00"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/txtName"
+                    app:layout_constraintVertical_bias="0.033" />
+
+                <EditText
+                    android:id="@+id/txt_telephone"
+                    android:layout_width="match_parent"
+                    android:layout_height="42dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/edit"
+                    android:drawableLeft="@drawable/outline_call_24"
+                    android:drawablePadding="12dp"
+                    android:hint="Número de celular"
+                    android:inputType="phone"
+                    android:paddingStart="12dp"
+                    android:paddingLeft="12dp"
+                    android:textColor="@color/black"
+                    android:textColorHint="#FF6D00"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/txtEmail"
+                    app:layout_constraintVertical_bias="0.04" />
+
+                <EditText
+                    android:id="@+id/txt_city"
+                    android:layout_width="match_parent"
+                    android:layout_height="42dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/edit"
+                    android:drawableLeft="@drawable/outline_room_24"
+                    android:drawablePadding="12dp"
+                    android:hint="Nombre de la ciudad "
+                    android:paddingStart="12dp"
+                    android:paddingLeft="12dp"
+                    android:textColor="@color/black"
+                    android:textColorHint="#FF6D00"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="1.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/txt_telephone"
+                    app:layout_constraintVertical_bias="0.08" />
+
+                <EditText
+                    android:id="@+id/txt_municipality"
+                    android:layout_width="match_parent"
+                    android:layout_height="42dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/edit"
+                    android:drawableLeft="@drawable/outline_room_24"
+                    android:drawablePadding="12dp"
+                    android:hint="Nombre del municipio "
+                    android:paddingStart="12dp"
+                    android:paddingLeft="12dp"
+                    android:textColor="@color/black"
+                    android:textColorHint="#FF6D00"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="1.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/txt_city"
+                    app:layout_constraintVertical_bias="0.08" />
+
+                <EditText
+                    android:id="@+id/txt_card_number"
+                    android:layout_width="match_parent"
+                    android:layout_height="42dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/edit"
+                    android:drawableLeft="@drawable/outline_payment_24"
+                    android:drawablePadding="12dp"
+                    android:hint="0000 0000 0000"
+                    android:inputType="phone"
+                    android:paddingStart="12dp"
+                    android:paddingLeft="12dp"
+                    android:textColor="@color/black"
+                    android:textColorHint="#FF6D00"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/txttelephone"
+                    app:layout_constraintVertical_bias="0.043" />
+
+                <LinearLayout
+                    android:id="@+id/groupNumbers"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:layout_weight="0.7"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+
+                    <EditText
+                        android:id="@+id/txt_card_month"
+                        android:layout_width="40dp"
+                        android:layout_height="43dp"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/edit"
+                        android:drawableLeft="@drawable/outline_date_range_24"
+                        android:drawablePadding="12dp"
+                        android:ems="10"
+                        android:hint="MM"
+                        android:inputType="phone"
+                        android:paddingStart="12dp"
+                        android:paddingLeft="12dp"
+                        android:textColor="@color/black"
+                        android:textColorHint="#FF6D00" />
+
+                    <TextView
+                        android:id="@+id/textView"
+                        android:layout_width="15dp"
+                        android:paddingLeft="6dp"
+                        android:layout_height="match_parent"
+                        android:textColor="@color/black"
+                        android:textSize="30dp"
+                        android:fontFamily="@font/archivo_black"
+                        android:text="/" />
+
+                    <EditText
+                        android:id="@+id/txt_card_year"
+                        android:layout_width="40dp"
+                        android:layout_height="43dp"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="1"
+                        android:ems="10"
+                        android:inputType="phone"
+                        android:background="@drawable/edit"
+                        android:textColorHint="#FF6D00"
+                        android:drawableLeft="@drawable/outline_date_range_24"
+                        android:drawablePadding="12dp"
+                        android:hint="YY"
+                        android:textColor="@color/black"
+                        android:paddingStart="12dp"
+                        android:paddingLeft="12dp"
+                        />
+
+                </LinearLayout>
+
+
+                <EditText
+                    android:id="@+id/txt_card_cvc"
+                    android:layout_width="match_parent"
+                    android:layout_height="42dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/edit"
+                    android:drawableLeft="@drawable/outline_payment_24"
+                    android:drawablePadding="12dp"
+                    android:hint="CVC"
+                    android:inputType="phone"
+                    android:paddingStart="12dp"
+                    android:paddingLeft="12dp"
+                    android:textColor="@color/black"
+                    android:textColorHint="#FF6D00"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="1.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/txt_card_date"
+                    app:layout_constraintVertical_bias="0.08" />
+
+
+                <Button
+                    android:id="@+id/btnPayment"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/button"
+                    android:fontFamily="@font/archivo_black"
+                    android:text="REALIZAR PAGO"
+                    android:textAllCaps="false"
+                    android:textColor="#FFFFFF"
+                    android:textSize="16sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/txt_price_internet"
+                    app:layout_constraintVertical_bias="0.556" />
+
+            </LinearLayout>
+
+
+        </ScrollView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
